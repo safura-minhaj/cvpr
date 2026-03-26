@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('image.jpg')
+img = cv2.imread('image.jpg', 0)
 
 for i in range(8):
     bit_plane = (img >> i) & 1
